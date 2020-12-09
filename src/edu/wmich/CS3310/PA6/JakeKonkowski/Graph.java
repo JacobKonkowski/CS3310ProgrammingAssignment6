@@ -3,8 +3,10 @@ package edu.wmich.CS3310.PA6.JakeKonkowski;
 //Java program for Kruskal's algorithm to 
 //find Minimum Spanning Tree of a given 
 //connected, undirected and weighted graph
+
 import java.util.*;
 
+//From GeeksForGeeks
 class Graph {
 
 	int V, E; // V-> no. of vertices & E->no.of edges
