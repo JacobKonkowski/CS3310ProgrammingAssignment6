@@ -79,6 +79,18 @@ public class MainController {
 		graph.edge[13].dest = 5;
 		graph.edge[13].weight = 14;
 
+		//look at edge 7-6, no cycle would be formed so we include it
+		//look at edge 8-2, no cycle would be formed so we include it
+		//look at edge 6-5, no cycle would be formed so we include it
+		//look at edge 0-1, no cycle would be formed so we include it
+		//look at edge 2-5, no cycle would be formed so we include it
+		//look at edge 8-6, including this would create a cycle so we don't
+		//look at edge 2-3, no cycle would be formed so we include it
+		//look at edge 7-8, no cycle would be formed so we include it
+		//look at edge 0-7, no cycle would be formed so we include it
+		//Now, the number of edges is 8 so we stop because the minimum spanning tree
+		//should have (V-1) edges
+		
 		// Function call
 		graph.KruskalMST();
 	}
